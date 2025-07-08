@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "name": "PIZZA",
+    "desc": "Pizza adalah makanan berupa roti bundar dan pipih yang dipanggang dalam oven, biasanya dilumuri saus tomat dan keju, serta ditambahkan berbagai topping sesuai selera. Pizza berasal dari Italia, khususnya Napoli, dan telah menjadi makanan populer di seluruh dunia dengan berbagai variasi. ",
+    "category": "Makanan",
+    "image": "/images/pizza.png",
+    "created_by": "user1"
+  },
+  {
+    "id": 2,
+    "name": "RAMEN",
+    "desc": "amen adalah hidangan mie kuah khas Jepang yang terdiri dari mie gandum, kuah kaldu, dan berbagai topping. Ramen memiliki sejarah panjang dan telah menjadi bagian penting dari budaya kuliner Jepang, serta populer di seluruh dunia. ",
+    "category": "Makanan",
+    "image": "/images/ramen.png"
+  },
+  {
+    "id": 3,
+    "name": "SPAGHETTI",
+    "desc": "Spaghetti adalah salah satu jenis pasta yang populer, berbentuk panjang, tipis, dan silinder, mirip dengan mie. Berasal dari Italia, spaghetti terbuat dari tepung gandum durum dan air, dan sering disajikan dengan berbagai saus seperti bolognese, carbonara, atau aglio e olio. ",
+    "category": "Makanan",
+    "image": "/images/spaguetti.png"
+  },
+  {
+    "id": 4,
+    "name": "SANDWICH",
+    "desc": "Sandwich adalah makanan berupa dua potong roti yang diapit atau diisi dengan berbagai macam isian seperti daging, sayuran, keju, atau bahan lainnya. Istilah sandwich juga bisa merujuk pada roti lapis, yaitu makanan yang terdiri dari isian yang diapit oleh dua potong roti. ",
+    "category": "Makanan",
+    "image": "/images/sandwich.png"
+  },
+  {
+    "id": 5,
+    "name": "SODA GEMBIRA",
+    "desc": "Soda gembira adalah minuman khas Indonesia yang terbuat dari campuran soda, susu kental manis, dan sirup. Minuman ini populer karena rasanya yang manis, menyegarkan, dan mudah dibuat, terutama saat cuaca panas. ",
+    "category": "Minuman",
+    "image": ""
+  }
+]

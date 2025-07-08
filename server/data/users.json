@@ -1,0 +1,27 @@
+[
+  {
+    "username": "user1",
+    "password": "123",
+    "name": "Joko",
+    "email": "joko@example.com",
+    "alamat": "Kepanjen, Malang",
+    "divisi": "IT",
+    "token": "8c0ad1198d294d127bb127f9e953781c"
+  },
+  {
+    "username": "user2",
+    "password": "123",
+    "name": "Andi",
+    "email": "andi@example.com",
+    "alamat": "Klojen, Malang",
+    "divisi": "Pemasaran"
+  },
+  {
+    "username": "user3",
+    "password": "123",
+    "name": "Rudi",
+    "email": "rudi@example.com",
+    "alamat": "Kedung Kandang, Malang",
+    "divisi": "Humas"
+  }
+]
