@@ -1,38 +1,182 @@
 [
   {
     "id": 1,
-    "name": "PIZZA",
+    "name": "Pizza",
     "desc": "Pizza adalah makanan berupa roti bundar dan pipih yang dipanggang dalam oven, biasanya dilumuri saus tomat dan keju, serta ditambahkan berbagai topping sesuai selera. Pizza berasal dari Italia, khususnya Napoli, dan telah menjadi makanan populer di seluruh dunia dengan berbagai variasi. ",
     "category": "Makanan",
     "image": "/images/pizza.png",
+    "is_favorite": true,
     "created_by": "user1"
   },
   {
     "id": 2,
-    "name": "RAMEN",
-    "desc": "amen adalah hidangan mie kuah khas Jepang yang terdiri dari mie gandum, kuah kaldu, dan berbagai topping. Ramen memiliki sejarah panjang dan telah menjadi bagian penting dari budaya kuliner Jepang, serta populer di seluruh dunia. ",
+    "name": "Ramen",
+    "desc": "Ramen adalah hidangan mie kuah khas Jepang yang terdiri dari mie gandum, kuah kaldu, dan berbagai topping. Ramen memiliki sejarah panjang dan telah menjadi bagian penting dari budaya kuliner Jepang, serta populer di seluruh dunia. ",
     "category": "Makanan",
-    "image": "/images/ramen.png"
+    "image": "/images/ramen.png",
+    "is_favorite": true,
+    "created_by": "user1"
   },
   {
     "id": 3,
-    "name": "SPAGHETTI",
+    "name": "Spaghetti",
     "desc": "Spaghetti adalah salah satu jenis pasta yang populer, berbentuk panjang, tipis, dan silinder, mirip dengan mie. Berasal dari Italia, spaghetti terbuat dari tepung gandum durum dan air, dan sering disajikan dengan berbagai saus seperti bolognese, carbonara, atau aglio e olio. ",
     "category": "Makanan",
-    "image": "/images/spaguetti.png"
+    "image": "/images/spaguetti.png",
+    "is_favorite": false,
+    "created_by": "user2"
   },
   {
     "id": 4,
-    "name": "SANDWICH",
+    "name": "Sandwich",
     "desc": "Sandwich adalah makanan berupa dua potong roti yang diapit atau diisi dengan berbagai macam isian seperti daging, sayuran, keju, atau bahan lainnya. Istilah sandwich juga bisa merujuk pada roti lapis, yaitu makanan yang terdiri dari isian yang diapit oleh dua potong roti. ",
     "category": "Makanan",
-    "image": "/images/sandwich.png"
+    "image": "/images/sandwich.png",
+    "is_favorite": true,
+    "created_by": "user2"
   },
   {
     "id": 5,
-    "name": "SODA GEMBIRA",
+    "name": "Soda Gembira",
     "desc": "Soda gembira adalah minuman khas Indonesia yang terbuat dari campuran soda, susu kental manis, dan sirup. Minuman ini populer karena rasanya yang manis, menyegarkan, dan mudah dibuat, terutama saat cuaca panas. ",
     "category": "Minuman",
-    "image": ""
+    "image": "/images/sogem.png",
+    "is_favorite": false,
+    "created_by": "user1"
+  },
+  {
+    "id": 6,
+    "name": "Teh Hangat",
+    "desc": "Teh hangat terbuat dari daun teh pegunungan yang murni dan segar",
+    "category": "Minuman",
+    "image": "/images/tea.png",
+    "is_favorite": false,
+    "created_by": "user2"
+  },
+  {
+    "id": 7,
+    "name": "Smoothie",
+    "desc": "Soda gembira adalah minuman khas Indonesia yang terbuat dari campuran soda, susu kental manis, dan sirup. Minuman ini populer karena rasanya yang manis, menyegarkan, dan mudah dibuat, terutama saat cuaca panas. ",
+    "category": "Minuman",
+    "image": "/images/smoothie.png",
+    "is_favorite": true,
+    "created_by": "user1"
+  },
+  {
+    "id": 8,
+    "name": "Coklat Hangat",
+    "desc": "Coklat hangat terbuat dari biji coklat pilihan0",
+    "category": "Minuman",
+    "image": "/images/cocoa.png",
+    "is_favorite": true,
+    "created_by": "user1"
+  },
+  {
+    "id": 9,
+    "name": "Jus Jeruk",
+    "desc": "Jus jeruk terbuat dari jeruk pilihan",
+    "category": "Minuman",
+    "image": "/images/orange.png",
+    "is_favorite": false,
+    "created_by": "user2"
+  },
+  {
+    "id": 10,
+    "name": "Cocktail",
+    "desc": "Cocktail terbuat dari buah-buah terbaik dicampur dengan sedikit soda",
+    "category": "Minuman",
+    "image": "/images/cocktail.png",
+    "is_favorite": true,
+    "created_by": "user1"
+  },
+  {
+    "id": 11,
+    "name": "Ayam Panggang",
+    "desc": "Ayam panggang terbuat dari ayam yang dipanggang dan dilumuri dengan rempah-rempah terbaik ",
+    "category": "Makanan",
+    "image": "/images/ayam.png",
+    "is_favorite": true,
+    "created_by": "user1"
+  },
+  {
+    "id": 12,
+    "name": "Kopi Hitam",
+    "desc": "Kopi hitam terbuat dari biji kopi yang kami pilih langsung dari perkebunan kopi terbaik",
+    "category": "Minuman",
+    "image": "/images/coffee.png",
+    "is_favorite": false,
+    "created_by": "user1"
+  },
+  {
+    "id": 13,
+    "name": "Es Kelapa Muda",
+    "desc": "Es kelapa muda terbuat dari kelapa muda yang menyegarkan",
+    "category": "Minuman",
+    "image": "/images/degan.png",
+    "is_favorite": false,
+    "created_by": "user1"
+  },
+  {
+    "id": 14,
+    "name": "Air Mineral",
+    "desc": "Air mineral dari air pegunungan yang menyegarkan. ",
+    "category": "Minuman",
+    "image": "/images/water.png",
+    "is_favorite": true,
+    "created_by": "user2"
+  },
+  {
+    "id": 15,
+    "name": "Soto Ayam",
+    "desc": "Soto nikmat dan lezat",
+    "category": "Makanan",
+    "image": "",
+    "is_favorite": false,
+    "created_by": "user1"
+  },
+  {
+    "id": 16,
+    "name": "Hot Pot",
+    "desc": "Hotpot",
+    "category": "Makanan",
+    "image": "/images/hot-pot.png",
+    "is_favorite": false,
+    "created_by": "user1"
+  },
+  {
+    "id": 17,
+    "name": "French Fries",
+    "desc": "French fries",
+    "category": "Minuman",
+    "image": "/images/french-fries.png",
+    "is_favorite": false,
+    "created_by": "user1"
+  },
+  {
+    "id": 18,
+    "name": "Hamburger",
+    "desc": "Hamburger adalah.......",
+    "category": "Makanan",
+    "image": "/images/hamburger.png",
+    "is_favorite": false,
+    "created_by": "user2"
+  },
+  {
+    "id": 19,
+    "name": "Donut",
+    "desc": "Donut adalah.......",
+    "category": "Makanan",
+    "image": "/images/donut.png",
+    "is_favorite": false,
+    "created_by": "user2"
+  },
+  {
+    "id": 20,
+    "name": "Bakso",
+    "desc": "Bakso enak dan nikmat",
+    "category": "Makanan",
+    "image": "",
+    "is_favorite": false,
+    "created_by": "user1"
   }
 ]

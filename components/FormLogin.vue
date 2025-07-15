@@ -41,59 +41,23 @@
 
 <script setup lang="ts">
 import { ref } from "vue";
-import { useUserStore } from "~/stores/user";
-import { navigateTo } from "#app";
+import { useAuth } from "~/composables/useAuth";
 
 const username = ref("");
 const password = ref("");
 const error = ref("");
-const userStore = useUserStore();
-
-// ✅ Typing untuk response dari /api/login
-interface LoginResponse {
-  success: boolean;
-  token?: string;
-  message?: string;
-  user?: {
-    name: string;
-    username: string;
-    email: string;
-    alamat: string;
-    divisi: string;
-  };
-}
+const { login } = useAuth();
 
 const handleLogin = async () => {
   error.value = "";
 
-  try {
-    const res = await $fetch<LoginResponse>("/api/login", {
-      method: "POST",
-      body: {
-        username: username.value,
-        password: password.value,
-      },
-    });
+  const result = await login({
+    username: username.value,
+    password: password.value,
+  });
 
-    if (res.success && res.token && res.user) {
-      // ✅ Simpan token di localStorage
-      localStorage.setItem("token", res.token);
-
-      // ✅ Simpan data user di Pinia
-      userStore.setUser({
-        name: res.user.name,
-        email: res.user.email,
-        alamat: res.user.alamat,
-        divisi: res.user.divisi,
-      });
-
-      // ✅ Arahkan ke dashboard
-      await navigateTo("/dashboard");
-    } else {
-      error.value = res.message || "Login gagal.";
-    }
-  } catch (err) {
-    error.value = "Terjadi kesalahan saat login.";
+  if (!result.success) {
+    error.value = result.message ?? "Login gagal.";
   }
 };
 </script>

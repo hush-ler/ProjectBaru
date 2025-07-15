@@ -6,11 +6,9 @@ export default defineEventHandler(async (event) => {
   const body = await readBody(event);
   const { username, password } = body;
 
-  // Baca users.json
   const raw = await readFile("server/data/users.json", "utf-8");
   const users = JSON.parse(raw);
 
-  // Temukan user index
   const userIndex = users.findIndex(
     (u: any) => u.username === username && u.password === password
   );
@@ -19,11 +17,16 @@ export default defineEventHandler(async (event) => {
     return { success: false, message: "Username atau password salah" };
   }
 
-  // 🔐 Generate token random
+  if (users[userIndex].token) {
+    return {
+      success: false,
+      message: "Akun ini sedang login di perangkat lain.",
+    };
+  }
+
   const token = crypto.randomBytes(16).toString("hex");
   users[userIndex].token = token;
 
-  // 💾 Simpan token ke file
   await writeFile("server/data/users.json", JSON.stringify(users, null, 2));
 
   const user = users[userIndex];
@@ -37,6 +40,7 @@ export default defineEventHandler(async (event) => {
       email: user.email,
       alamat: user.alamat,
       divisi: user.divisi,
+      photo: user.photo,
     },
   };
 });

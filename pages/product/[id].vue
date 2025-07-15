@@ -16,7 +16,9 @@
           </v-card-title>
 
           <v-card-subtitle class="mb-3 text-black">
-            Kategori: {{ product.category || "Bukan Makanan dan Minuman" }}
+            Kategori: {{ product.category || "Bukan Makanan dan Minuman" }} ({{
+              product.is_favorite ? "Favorit" : "Bukan Favorit"
+            }})
           </v-card-subtitle>
 
           <v-card-text class="text-body-1">

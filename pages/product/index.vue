@@ -10,16 +10,7 @@
         md="4"
         lg="3"
       >
-        <v-card :to="`/product/${item.id}`" class="hover:shadow-lg" link>
-          <v-card-title class="font-weight-bold bg-black text-white">
-            {{ item.name }}
-          </v-card-title>
-          <v-card-subtitle>{{ item.category }}</v-card-subtitle>
-          <v-card-text> {{ item.desc?.slice(0, 80) }}... </v-card-text>
-          <v-card-actions>
-            <v-btn color="primary" variant="text">Lihat Detail</v-btn>
-          </v-card-actions>
-        </v-card>
+        <ProductCard :product="item" />
       </v-col>
     </v-row>
   </v-container>
@@ -27,6 +18,7 @@
 
 <script setup lang="ts">
 import { useProducts } from "~/composables/useProducts";
+import ProductCard from "~/components/layout/ProductCard.vue";
 
 const { products } = useProducts();
 </script>

@@ -9,14 +9,11 @@
         <v-btn variant="text" color="white">Home</v-btn>
       </NuxtLink>
       <NuxtLink to="/product/">
-        <v-btn variant="text" color="white">Product</v-btn>
+        <v-btn variant="text" color="white">Menu</v-btn>
       </NuxtLink>
       <NuxtLink to="/login">
         <v-btn variant="text" color="white">Login</v-btn>
       </NuxtLink>
-      <!-- <NuxtLink to="/dashboard">
-          <v-btn variant="text" color="white">Dashboard</v-btn>
-        </NuxtLink> -->
     </div>
   </v-app-bar>
 </template>

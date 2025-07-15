@@ -6,4 +6,7 @@
 
 <script setup>
 import FormLogin from "~/components/FormLogin.vue";
+definePageMeta({
+  middleware: "midlog",
+});
 </script>

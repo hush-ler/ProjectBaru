@@ -6,7 +6,7 @@
     "email": "joko@example.com",
     "alamat": "Kepanjen, Malang",
     "divisi": "IT",
-    "token": "8c0ad1198d294d127bb127f9e953781c"
+    "photo": "/images/boy.png"
   },
   {
     "username": "user2",
@@ -14,14 +14,16 @@
     "name": "Andi",
     "email": "andi@example.com",
     "alamat": "Klojen, Malang",
-    "divisi": "Pemasaran"
+    "divisi": "Pemasaran",
+    "photo": "/images/man.png"
   },
   {
     "username": "user3",
     "password": "123",
-    "name": "Rudi",
-    "email": "rudi@example.com",
+    "name": "Sasa",
+    "email": "sasa@example.com",
     "alamat": "Kedung Kandang, Malang",
-    "divisi": "Humas"
+    "divisi": "Humas",
+    "photo": "/images/grandmother.png"
   }
 ]

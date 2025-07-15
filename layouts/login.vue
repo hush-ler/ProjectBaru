@@ -9,10 +9,23 @@
           class="rounded-circle mx-10"
         />
       </NuxtLink>
-      <NuxtLink to="/product/products">
-        <v-btn variant="text" color="white">Product</v-btn>
-      </NuxtLink>
-      <v-spacer />
+
+      <template v-slot:append>
+        <NuxtLink to="/dashboard">
+          <v-btn variant="text" color="white">Profil</v-btn>
+        </NuxtLink>
+        <NuxtLink to="/product/products">
+          <v-btn variant="text" color="white">Menu</v-btn>
+        </NuxtLink>
+        <v-btn
+          variant="text"
+          color="white"
+          @click="logout"
+          prepend-icon="mdi-logout"
+        >
+          Logout
+        </v-btn>
+      </template>
     </v-app-bar>
     <v-main>
       <slot />
@@ -22,4 +35,7 @@
 
 <script setup>
 import logo from "/images/logo_resto.png";
+import { useAuth } from "~/composables/useAuth";
+
+const { logout } = useAuth();
 </script>
